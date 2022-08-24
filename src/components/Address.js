@@ -1,12 +1,24 @@
 import Info from "./Info";
+import PropTypes from "prop-types";
 
-function Address() {
+function Address(props) {
+    
     return (
         <>
-        <h1>My address</h1>
-        <Info />
+            <p>{props.street}</p>
+            <Info info="2 + 2 = 5"/>
+            <Info />
         </>
-        );
+    );
+    
+}
+
+Address.defaultProps = {
+    street: "Morpeth Road"
+};
+
+Address.propTypes ={
+    street: PropTypes.string.isRequired
 }
 
 export default Address;
