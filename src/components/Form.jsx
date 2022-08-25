@@ -9,31 +9,31 @@ const Form = () => {
 
     const printValues = e => {
         e.preventDefault();
-        console.log(username,password);
+        console.log(username, password);
     };
 
-        return (
-            <>
+    return (
+        <>
             <form onSubmit={printValues}>
-            <label> Username:</label>
-                <input name="username" 
-                type="text" 
-                value={username} 
-                onChange={e => setUsername(e.target.value)}/>
+                <label> Username:</label>
+                <input name="username"
+                    type="text"
+                    value={username}
+                    onChange={e => setUsername(e.target.value)} />
 
-            <label> Password: </label>
+                <label> Password: </label>
                 <input type="password"
-                name="password"
-                value={password}
-                onChange={e => {
-                    setPassword(e.target.value);
-                    console.log({password})
-                }}/>
-            <br/>
-            <button>Submit</button>
+                    name="password"
+                    value={password}
+                    onChange={e => {
+                        setPassword(e.target.value);
+                        console.log({ password })
+                    }} />
+                <br />
+                <button>Submit</button>
             </form>
         </>
-        );
+    );
 
 }
 

@@ -8,6 +8,7 @@ import Clock2 from './components/Clock2';
 import Form from './components/Form';
 import Car from './components/Car';
 import ProductTable from './components/ProductTable';
+import Game from './components/Game';
 
 
 const name = "KESTER";
@@ -42,6 +43,8 @@ function App() {
       <Car />
 
       <ProductTable />
+
+      <Game />
       <Footer />
     </div>
   );

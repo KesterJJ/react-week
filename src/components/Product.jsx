@@ -1,10 +1,13 @@
 const Product = (props) => {
 
-    if (props.name.con
+    if (props.name.includes(props.search)) {
     return (
         <div>
-            <p>product name:</p>
+            <p>Product name:</p>
             <p>{props.name}</p>
         </div>
     );
+    }
 };
+
+export default Product;
