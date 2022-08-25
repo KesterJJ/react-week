@@ -9,6 +9,7 @@ import Form from './components/Form';
 import Car from './components/Car';
 import ProductTable from './components/ProductTable';
 import Game from './components/Game';
+import Shopping from './components/Shopping';
 
 
 const name = "KESTER";
@@ -45,6 +46,8 @@ function App() {
       <ProductTable />
 
       <Game />
+
+      <Shopping />
       <Footer />
     </div>
   );
